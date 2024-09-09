@@ -37,7 +37,7 @@ function App() {
       <div>
         <h1 className="text-3xl font-bold ml-[100px] m-5">TO DO LIST</h1>
         <Todoinput addList={addList} />
-        <hr />
+        <hr className='mr-[50%]'/>
         {listTodo.map((listItem, i) => (
           <Todolist
             key={i}

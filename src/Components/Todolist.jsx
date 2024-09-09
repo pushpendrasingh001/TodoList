@@ -5,7 +5,7 @@ import { faTrashCan, faSave} from '@fortawesome/free-solid-svg-icons';
 
 function Todolist({ index, item, deleteItem, editItem, isEditing, editText, setEditText, saveEdit }) {
   return (
-    <div className="flex items-center max-w-xs ml-5 m-3 p-2 border border-gray-300 rounded-md">
+    <div className="flex items-center max-w-xs ml-5 m-3 p-2 border border-blue-400 rounded-md">
       {isEditing ? (
         <>
           <input
@@ -20,12 +20,12 @@ function Todolist({ index, item, deleteItem, editItem, isEditing, editText, setE
         </>
       ) : (
         <>
-          <input
-            type="text"
+          <sp
+            
             className="flex-1 bg-transparent border-none p-2"
-            value={item}
-            readOnly
-          />
+            >{item}</sp>
+           
+          
         
           <FontAwesomeIcon
             className="ml-2 cursor-pointer"
